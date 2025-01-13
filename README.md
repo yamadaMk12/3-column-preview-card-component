@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/yamadaMk12/3-column-preview-card-component](https://github.com/yamadaMk12/3-column-preview-card-component)
+- Live Site URL: [https://yamadamk12.github.io/3-column-preview-card-component/](https://yamadamk12.github.io/3-column-preview-card-component/)
 
 ## My process
 
