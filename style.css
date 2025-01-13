@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--very-light-gray);
+}
+
+main {
+    max-width: 57rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem;
+}
+
+section {
+    padding: 2.4rem;
+}
+
+section:nth-child(1) {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-end-start-radius: 8px;
+}
+
+section:nth-child(2) {
+    background-color: var(--dark-cyan);
+}
+
+section:nth-child(3) {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-end-end-radius: 8px;
+}
+
+section img {
+    margin-bottom: 2rem;
+}
+
+section h1 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+section p {
+    color: var(--transparent-white);
+    font-family: "Lexend Deca";
+    max-width: 87%;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 6rem;
+}
+
+button {
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-family: "Lexend Deca";
+    border: 2px solid var(--very-light-gray);
+}
+
+section:nth-child(1) button {
+    color: var(--bright-orange);
+}
+
+section:nth-child(2) button {
+    color: var(--dark-cyan);
+}
+
+section:nth-child(3) button {
+    color: var(--very-dark-cyan);
+}
+
+
+section:nth-child(1) button:hover, section:nth-child(2) button:hover, section:nth-child(3) button:hover {
+    color: var(--very-light-gray);
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+}
+
+
+
+@media screen and (max-width: 790px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 30rem);
+    }
+
+    section p {
+        margin-bottom: 5rem;
+    }
+
+    section:nth-child(1) {
+        border-end-start-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+
+    section:nth-child(3) {
+        border-top-right-radius: 0px;
+        border-end-start-radius: 8px;
+    }
+}
